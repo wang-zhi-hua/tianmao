@@ -171,7 +171,7 @@ for(var i=0;i<sousuotext.length;i++){
 }
 
     //左侧导航,
-    var jumpLeft=$(".jump-left")[0];
+    var jumpLeft=$(".jump")[0];
     var dhbtn=$("li",jumpLeft);
     var ch=document.documentElement.clientHeight;
     var floors=$(".floors");
@@ -182,7 +182,7 @@ for(var i=0;i<sousuotext.length;i++){
             dhbtn[this.index].style.background="#c40000";
         }
         dhbtn[i].onmouseout=function(){
-            dhbtn[this.index].style.background="#2d2d2d";
+            dhbtn[this.index].style.background="#F5F5F5";
         }
         dhbtn[i].onclick=function(){
             var obj=document.documentElement.scrollTop?document.documentElement:document.body;
@@ -305,7 +305,7 @@ for(var i=0;i<sousuotext.length;i++){
             floors[i].t=floors[i].offsetTop;
             if(floors[i].t<(scrollT+ch/2)){
                 for(var j=0;j<dhbtn.length;j++){
-                    dhbtn[j].style.background="#2d2d2d";
+                    dhbtn[j].style.background="#F5F5F5";
                 }
                 dhbtn[i].style.background="#c40000";
             }
